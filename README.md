@@ -12,7 +12,7 @@
 
    - 在`yolov5`的文件下面有一个 `requirements.txt`文件,这里就是环境依赖的说明。
    - 这里我以 `vscode` 为例（选择自己使用 `conda` 创建的虚拟环境）
-     - ![1](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/1.png)
+     - ![1](./src/1.png)
    - 在 `vscode` 打开终端 输入  `pip install -r requirements.txt` 下载安装依赖包
 
 ####  创建数据集
@@ -33,7 +33,7 @@
 
    - 然后我们就可以进行标注过程啦！
 
-     - ![2](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/2.png)
+     - ![2](./src/2.png)
 
      > （1）是打开相应的图片文件
      > （2）首先在这里设定好保存的路径地址，这样待会直接“save”就很方便
@@ -49,7 +49,7 @@
      - `african-wildlife-dataset` 已经分类
        - 未分类到已分类，可执行程序 `format_dataset.py`
        - 命令 `python format_dataset.py`
-     - ![3](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/3.png)
+     - ![3](./src/3.png)
 
      > 其中labels中的txt文件里面代表的是：每一行代表标注的一个目标，第一个数字代表着这个数的类别，后面的四个数字是归一化后的的标注的中心点坐标(x,y)和归一化标注框的宽和高(w,h)。
 
@@ -140,7 +140,7 @@
 
 + 此时就是漫长的训练过程了等吧！，等吧！慢慢的等吧！
 + 哇哦！成功了！看截图！
-  + ![4](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/4.png)
+  + ![4](./src/4.png)
   + 以上便是成功之后生成的文件图啦
 
 ### 3. 对结果进行验证
@@ -234,7 +234,7 @@
 + 解决方案：
 
   + 点击报错跳转， **只点击包含`datasets.py`的错误信息，跳转按如图进行修改**
-  + ![5](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/5.png)
+  + ![5](./src/5.png)
 
 #### 将device默认值改为0，使用GPU训练报错，修改方法如下
 
@@ -242,7 +242,7 @@
 
 + 按如下输入
 
-  + ![6](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/6.png)
+  + ![6](./src/6.png)
 
   + 如果返回False，请在conda内连接当前虚拟环境，**分别输入**
 
@@ -251,7 +251,7 @@
 
   + 完成后在cmd中输入`nvcc --version`
 
-    + ![7](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/7.png)
+    + ![7](./src/7.png)
 
   + 或者参考
 
@@ -260,20 +260,20 @@
   + 随后在pytorch官网查看对应的下面命令
 
     + **建议选择pip命令**
-    + ![8](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/8.png)
+    + ![8](./src/8.png)
     + 等待安装完成应该就ok了，
 
     > 以上便是我遇到的所有报错，欢迎大家一起交流，指正！
 
 ### wand快速生成报告
 
-+ ![9](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/9.png)
++ ![9](./src/9.png)
 + 看到这样的图就问你心动不心动，所有的图标都可以下载哦
 + 第一步在 `conda`终端安装
   + `pip install wandb`
 + 第二步 注册并获取key
   + [wandb官网](https://wandb.ai/)
-  + ![10](F:/study/zjxWeb.github.io/docs/study/machineLearning/yolo/src/10.png)
+  + ![10](./src/10.png)
 + 第三步执行训练命令
   + 会弹出选择
     + 选择第二个，黏贴刚才复制的key
