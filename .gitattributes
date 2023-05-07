@@ -1,0 +1,2 @@
+african-wildlife.zip filter=lfs diff=lfs merge=lfs -text
+african-wildlife-dataset.zip filter=lfs diff=lfs merge=lfs -text
